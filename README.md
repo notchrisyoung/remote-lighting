@@ -7,7 +7,7 @@ Built in **2018** for under-cabinet kitchen lighting (the photos below are from 
 | | |
 |---|---|
 | ![The controller on the wall](docs/photos/controller.jpg) | ![The controller from an angle](docs/photos/controller-angle.jpg) |
-| The controller, mounted above the existing light switches | The raised letter buttons |
+| The controller, mounted over its own wall box above the existing light switches | The raised letter buttons |
 
 ![The kitchen](docs/photos/kitchen.jpg)
 
@@ -67,7 +67,7 @@ Receivers map the brightness level to a PWM value (`5, 50, 150, 255`) on each se
 
 ![The controller opened up](docs/photos/controller-open.jpg)
 
-The switches are mounted on a printed board and hand-wired to a header that plugs into the Arduino. The box sits above the existing switch box, which it takes its power from.
+The switches are mounted on a printed board and hand-wired to a header that plugs into the Arduino. Behind the controller there's a standard electrical box in the wall, the same kind a normal light switch sits in. The controller mounts over it like a switch plate would, and the box brings mains power to the power module.
 
 > **Mains voltage:** the controller's power module is wired to household mains. Turn the breaker off before working on it, and if you aren't comfortable with mains wiring, power the controller from a USB supply instead.
 
