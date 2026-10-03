@@ -2,7 +2,14 @@
 
 A wireless dimmer system for LED lighting built from Arduinos and **nRF24L01 2.4 GHz radios**. A wall-mounted button **Controller**, built into a standard single-gang switch plate, sends commands to one or more **Receivers**. Each receiver drives up to three dimmable lighting zones with PWM.
 
-<!-- PHOTOS: add photos of the remote and a receiver here, e.g. ![Remote](docs/remote.jpg) -->
+| | |
+|---|---|
+| ![The controller on the wall](docs/photos/controller.jpg) | ![The controller from an angle](docs/photos/controller-angle.jpg) |
+| The controller, mounted above the existing light switches | The raised letter buttons |
+
+![The kitchen](docs/photos/kitchen.jpg)
+
+*The kitchen it lights.*
 
 ## Features
 
@@ -42,7 +49,30 @@ Receivers map the brightness level to a PWM value (`5, 50, 150, 255`) on each se
 
 **Each receiver**
 - Arduino + nRF24L01 (CE 9, CSN 10)
-- MOSFETs driving the LED zones from PWM pins **3, 5 and 6** (zones 1-3)
+- Three MOSFETs on heatsinks driving the LED zones from PWM pins **3, 5 and 6** (zones 1-3)
+- 12 V LED strip and a 12 V power supply
+
+## Build
+
+### Controller
+
+| | | |
+|---|---|---|
+| ![Printed wall plate and button sheet](docs/photos/plate-and-buttons.jpg) | ![The tactile switches under the buttons](docs/photos/switches.jpg) | ![Inside the controller](docs/photos/controller-inside.jpg) |
+| The wall plate and the one-piece letter-button sheet that sits behind it | With the plate off: the 10 tactile switches the letters press | Inside: a small mains-to-DC power module (top), the nRF24L01 radio and the Arduino (bottom) |
+
+![The controller opened up](docs/photos/controller-open.jpg)
+
+The switches are mounted on a printed board and hand-wired to a header that plugs into the Arduino. The box sits above the existing switch box, which it takes its power from.
+
+> **Mains voltage:** the controller's power module is wired to household mains. Turn the breaker off before working on it, and if you aren't comfortable with mains wiring, power the controller from a USB supply instead.
+
+### Receiver
+
+| | | |
+|---|---|---|
+| ![Inside a receiver](docs/photos/receiver-inside.jpg) | ![A closed receiver](docs/photos/receiver-closed.jpg) | ![A receiver installed](docs/photos/receiver-installed.jpg) |
+| An Arduino Nano and nRF24L01, with a MOSFET on a heatsink for each of the three zones | Closed up, with the zone outputs labelled | Installed on top of the cabinets, driving a 12 V LED strip from a 12 V supply |
 
 ## 3D-printed parts
 
