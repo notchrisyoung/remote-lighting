@@ -6,8 +6,8 @@ Built in **2018** for under-cabinet kitchen lighting (the photos below are from 
 
 | | |
 |---|---|
-| ![The controller on the wall](docs/photos/controller.jpg) | ![The controller from an angle](docs/photos/controller-angle.jpg) |
-| The controller, mounted over its own wall box above the existing light switches | The raised letter buttons |
+| ![The in-wall control plate](docs/photos/in-wall.jpg) | ![The surface-mounted controller](docs/photos/controller.jpg) |
+| The in-wall version: the electronics sit inside the wall box, so only the plate shows, like a normal switch plate | The surface-mounted version, with the electronics in a printed box over the wall box |
 
 ![The kitchen](docs/photos/kitchen.jpg)
 
