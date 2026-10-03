@@ -2,6 +2,8 @@
 
 A wireless dimmer system for LED lighting built from Arduinos and **nRF24L01 2.4 GHz radios**. A wall-mounted button **Controller**, built into a standard single-gang switch plate, sends commands to one or more **Receivers**. Each receiver drives up to three dimmable lighting zones with PWM.
 
+Built in **2018** for under-cabinet kitchen lighting (the photos below are from then), and added to GitHub in April 2021.
+
 | | |
 |---|---|
 | ![The controller on the wall](docs/photos/controller.jpg) | ![The controller from an angle](docs/photos/controller-angle.jpg) |
@@ -9,7 +11,9 @@ A wireless dimmer system for LED lighting built from Arduinos and **nRF24L01 2.4
 
 ![The kitchen](docs/photos/kitchen.jpg)
 
-*The kitchen it lights.*
+![The LED strips under the cabinets](docs/photos/under-cabinet.jpg)
+
+*The kitchen, and the LED strips under the cabinets that the system controls.*
 
 ## Features
 
@@ -72,7 +76,7 @@ The switches are mounted on a printed board and hand-wired to a header that plug
 | | | |
 |---|---|---|
 | ![Inside a receiver](docs/photos/receiver-inside.jpg) | ![A closed receiver](docs/photos/receiver-closed.jpg) | ![A receiver installed](docs/photos/receiver-installed.jpg) |
-| An Arduino Nano and nRF24L01, with a MOSFET on a heatsink for each of the three zones | Closed up, with the zone outputs labelled | Installed on top of the cabinets, driving a 12 V LED strip from a 12 V supply |
+| An Arduino Nano and nRF24L01, with a MOSFET on a heatsink for each of the three zones | Closed up, with the zone outputs labelled | Installed out of sight, driving a 12 V LED strip from a 12 V supply |
 
 ## 3D-printed parts
 
