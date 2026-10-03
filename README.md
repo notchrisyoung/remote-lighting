@@ -113,7 +113,3 @@ Both sides use radio channel 8 and low TX power. Change `radio.setChannel()` in 
 | `Receiver/Receiver.ino` | Receiver: listens and sets zone brightness |
 | `*/Transmitter.h` | Shared radio addresses and receiver count |
 | `models/` | 3D-printable parts for the controller and receiver |
-
-## Known issues
-
-- In `Controller.ino` `setup()`, the loop that configures the button pins is written `for(int i = 0; i++; i < 9)`. Its condition is `i++`, which is `0` on the first pass, so the loop never runs. The buttons still work because pins default to inputs, but the loop should be `for (int i = 0; i < 10; i++)`.

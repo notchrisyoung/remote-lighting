@@ -49,11 +49,10 @@ void setup(void)
 	radio.setRetries(0,15);                 // Smallest time between retries, max no. of retries
 	radio.setPayloadSize(1);                // Here we are sending 1-byte
 	radio.openReadingPipe(1,controllerAddress);
-	// Set pull-up resistors for all buttons
-	// When pressed the button is grounded
-	for(int i = 0; i++; i < 9){
-		pinMode(button_pins[i],INPUT);
-		digitalWrite(button_pins[i],LOW);
+	// Set every button pin as a plain input (internal pull-up off).
+	// The buttons read HIGH when pressed; external resistors pull them low otherwise.
+	for (uint8_t i = 0; i < sizeof(button_pins); i++) {
+		pinMode(button_pins[i], INPUT);
 	}
 }
 
